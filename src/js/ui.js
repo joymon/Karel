@@ -1,8 +1,6 @@
 $(document).ready(function () {
     var world = new World(document.getElementById("world"));
     world.draw();
-    karel = new test();
-    karel.test();
     karel = new Karel(document.getElementById("world"), world);
 
 });

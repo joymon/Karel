@@ -1,9 +1,4 @@
 
-function test() {
-    this.test = function () {
-        //alert("test");
-    };
-}
 function Karel(element, world) {
     var row = 0, col = 0,scr=2,lcr=5;
     var direction = "N";
@@ -24,11 +19,11 @@ function Karel(element, world) {
             case "S":
                 circle(context, cellCenter.x, cellCenter.y + scr, scr);
                 circle(context, cellCenter.x, cellCenter.y - lcr, lcr);
-                break
+                break;
             case "E":
                 circle(context, cellCenter.x + scr, cellCenter.y, scr);
                 circle(context, cellCenter.x - lcr, cellCenter.y, lcr);
-                break
+                break;
         }
     };
     this.move = function () {
@@ -36,19 +31,19 @@ function Karel(element, world) {
 
         switch (direction) {
             case "N":
-                if (row == 0) alert("cannot move");
+                if (row === 0) alert("cannot move");
                 else row = row - 1;
                 break;
             case "W":
-                if (col == 0) alert("cannot move");
+                if (col === 0) alert("cannot move");
                 else col = col - 1;
                 break;
             case "S":
-                if (row == worldSize.height-1) alert("cannot move");
+                if (row === worldSize.height-1) alert("cannot move");
                 else row = row + 1;
                 break;
             case "E":
-                if (col == worldSize.width-1) alert("cannot move");
+                if (col === worldSize.width-1) alert("cannot move");
                 else col = col + 1;
                 break;
         }

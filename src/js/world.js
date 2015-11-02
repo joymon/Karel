@@ -6,7 +6,7 @@ function World(canvas) {
     this.boardOffset = 0;
     this.boardWidth;
     this.size = {width:9,height:9};
-};
+}
 World.prototype.getSize = function () {
     return this.size;
 };
@@ -55,10 +55,9 @@ World.prototype.iDrawSquares = function (x, y) {
     var ch = this.boardHeight / this.rows;
     // draw all 81 little squares
     this.context.lineWidth = 1;
-    for (i = 0; i < this.rows; i++) {
-        for (j = 0; j < this.cols; j++) {
+    for (var i = 0; i < this.rows; i++) {
+        for (var j = 0; j < this.cols; j++) {
                 this.context.strokeRect(x + (j * cw), y + (i * ch), cw, ch);
-
         }
     }
 }
