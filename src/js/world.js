@@ -24,8 +24,8 @@ World.prototype.getCellSize = function () {
     return {w:this.boardWidth / this.cols,h:this.boardHeight / this.rows};
 };
 World.prototype.getCellCenter = function (row, col) {
-    cellWidth=this.boardWidth / this.cols;
-    cellHeight = this.boardHeight / this.rows;
+    var cellWidth=this.boardWidth / this.cols;
+    var cellHeight = this.boardHeight / this.rows;
     return { x:(col*cellWidth) + (cellWidth/2) , y: (row* cellHeight) + (cellHeight/2) };
 };
 World.prototype.draw = function () {
@@ -35,13 +35,9 @@ World.prototype.draw = function () {
     var x = this.boardOffset;
     var y = 0;
 
-    //    this.context.canvas.width = this.screenWidth;
-    //    this.context.canvas.height = this.screenHeight;
-
     this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
-    //this.iDrawBoardSquare(x, y);
-    this.iDrawSquares(x, y);
 
+    this.iDrawSquares(x, y);
 };
 World.prototype.iDrawBoardSquare = function (x, y) {
     this.context.fillStyle = "black";
@@ -57,7 +53,7 @@ World.prototype.iDrawSquares = function (x, y) {
     this.context.lineWidth = 1;
     for (var i = 0; i < this.rows; i++) {
         for (var j = 0; j < this.cols; j++) {
-                this.context.strokeRect(x + (j * cw), y + (i * ch), cw, ch);
+            this.context.strokeRect(x + (j * cw), y + (i * ch), cw, ch);
         }
     }
-}
+};
