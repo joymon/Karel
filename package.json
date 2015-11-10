@@ -1,0 +1,35 @@
+{
+    "name": "Karel",
+    "version": "1.0.0",
+    "description": "HTML5 & Javascript based Karel simulator to learn programming easily.",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/karma start tests/karma.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joymon/Karel.git"
+    },
+    "keywords": [
+        "Karel",
+        "JavaScript"
+    ],
+    "author": "Joy George K",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/joymon/Karel/issues"
+    },
+    "homepage": "https://github.com/joymon/Karel#readme",
+    "devDependencies": {
+        "jasmine": "^2.3.2",
+        "jasmine-core": "^2.3.4",
+        "karma": "^0.13.15",
+        "karma-jasmine": "^0.3.6",
+        "phantomjs": "^1.9.8",
+        "karma-phantomjs-launcher": "^0.2.1",
+        "ftp-deploy": "^1.1.0"
+    }
+}
