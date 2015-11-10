@@ -16,12 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       '*.js',
-      '../Src/Karel/js/*.js'
+      '../Src/js/*.js'
     ],
 
 
     // list of files to exclude
     exclude: [
+        "../Src/js/ui.js"
     ],
 
 
