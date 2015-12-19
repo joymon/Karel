@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/joymon/Karel.svg?branch=master)](https://travis-ci.org/joymon/Karel)
 # Karel
 HTML5 & Javascript based Karel simulator to learn programming easily.
 
