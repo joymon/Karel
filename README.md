@@ -8,5 +8,6 @@ More details on the project is available in the blog post.
 http://joymonscode.blogspot.com/2013/06/online-karel-simulator-based-on-html5.html
 
 ---
+# Future
 
-TypeScript based Karel Simulator is available at https://github.com/joymon/Karel-TypeScript
+TypeScript based Karel Simulator is available at https://github.com/joymon/Karel-TypeScript . This is the version getting maintained
